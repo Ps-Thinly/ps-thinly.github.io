@@ -1,0 +1,39 @@
+/* 
+värit tosta bootstrapin dark-teemasta
+vaaleempi:  #2b3035
+tummempi: #212529
+*/
+.strange-rocks {
+    background: #2b3035;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.golden-rocks {
+    background: #2b3035;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.strange-stat {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #212529;
+    margin: 10px;
+    padding: 0px 5px 0px 5px;
+}
+.strange-rocks-left {
+    margin: 0px;
+}
+.strange-rocks-right {
+    margin: 0px;
+}
+.in-progress {
+    background: rgb(157, 168, 0);
+    color: black;
+    border-radius: 3px;
+}
+.completed {
+    background: green;
+    border-radius: 3px;
+}
