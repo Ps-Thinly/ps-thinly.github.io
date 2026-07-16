@@ -1,1 +1,0 @@
-# ps-thinly.github.io
