@@ -15,7 +15,8 @@ tummempi: #212529
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.strange-stat {
+.strange-stat,
+.golden-stat {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #212529;
