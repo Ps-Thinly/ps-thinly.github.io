@@ -1,9 +1,14 @@
-document.querySelectorAll(".golden-stat").forEach((stat, index) => {
+const lastGoldenRock = document.querySelector(".last-golden-rock");
+const savedLastGoldenRock = localStorage.getItem("lastGoldenRock");
 
+if (savedLastGoldenRock !== null) {
+    lastGoldenRock.textContent = savedLastGoldenRock;
+}
+
+document.querySelectorAll(".golden-stat").forEach((stat, index) => {
     const goldenTitle = stat.querySelector(".golden-title");
     const goldenRockOne = stat.querySelector(".golden-rock-one");
     const goldenRockTwo = stat.querySelector(".golden-rock-two");
-    const lastGoldenRock = document.querySelector(".last-golden-rock");
 
     // haetaan tallennetut arvot tässä
     const savedGoldenRockOne = localStorage.getItem("goldenrock1-" + index);
@@ -18,9 +23,7 @@ document.querySelectorAll(".golden-stat").forEach((stat, index) => {
     }
 
     function checkBoth() {
-    
     stat.classList.remove("completed", "in-progress");
-    
     if (goldenRockOne.checked && goldenRockTwo.checked) {
         stat.classList.add("completed");
 
@@ -36,6 +39,14 @@ document.querySelectorAll(".golden-stat").forEach((stat, index) => {
   //päivitä classit heti sivun latautuessa
   checkBoth();
 
-goldenRockOne.addEventListener("change", checkBoth);
-goldenRockTwo.addEventListener("change", checkBoth);
+goldenRockOne.addEventListener("change", () => {
+    localStorage.setItem("lastGoldenRock", goldenTitle.textContent);
+    lastGoldenRock.textContent = goldenTitle.textContent;
+    checkBoth();
+});
+goldenRockTwo.addEventListener("change", () => {
+    localStorage.setItem("lastGoldenRock", goldenTitle.textContent);
+    lastGoldenRock.textContent = goldenTitle.textContent;
+    checkBoth();
+});
 });

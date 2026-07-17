@@ -56,7 +56,10 @@ margin: 50px 0px 50px 0px;
     border-radius: 3px;
 }
 
-
+.last-strange-rock,
+.last-golden-rock {
+    font-weight: bold;
+}
 
 
 
