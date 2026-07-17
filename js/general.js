@@ -21,7 +21,7 @@ removeStranges.addEventListener("click", () => {
 const removeGoldens = document.querySelector("#remove-goldens");
 removeGoldens.addEventListener("click", () => {
 
-    for (let i = 0; i <= 14; i++) {
+    for (let i = 0; i <= 15; i++) {
     localStorage.removeItem("goldenrock1-" + i);
     localStorage.removeItem("goldenrock2-" + i);
 }
