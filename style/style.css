@@ -3,6 +3,23 @@ värit tosta bootstrapin dark-teemasta
 vaaleempi:  #2b3035
 tummempi: #212529
 */
+
+.main-title {
+margin: 50px 0px 50px 0px;
+}
+
+.rock-title-wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.rock-title-wrapper h3 {
+  margin: 0px;
+}
+.rock-image-wrapper img {
+    width: 25px;
+    height: 25px;
+}
 .strange-rocks {
     background: #2b3035;
     border-radius: 8px;
