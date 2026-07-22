@@ -60,7 +60,18 @@ margin: 50px 0px 50px 0px;
 .last-golden-rock {
     font-weight: bold;
 }
-
+.checkboxes {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.strange-rock-one,
+ .strange-rock-two,
+ .golden-rock-one,
+ .golden-rock-two {
+    width: 16px !important;
+    height: 16px !important;
+}
 
 
 /* Sticky footer styles
