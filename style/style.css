@@ -47,7 +47,7 @@ margin: 50px 0px 50px 0px;
     margin: 0px;
 }
 .in-progress {
-    background: rgb(157, 168, 0);
+    background: rgba(255, 255, 0, 0.788);
     color: black;
     border-radius: 3px;
 }
